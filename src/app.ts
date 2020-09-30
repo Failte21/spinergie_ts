@@ -6,7 +6,6 @@ const app = () => {
   if (error) console.error(error.message);
   else {
     const [original, change] = data;
-    console.log({ original, change });
     console.log(JSON.stringify(applyChange(original, change)));
   }
 };
