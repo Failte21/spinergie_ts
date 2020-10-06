@@ -14,7 +14,6 @@ const set = (path: [string] | [], value: unknown, object: Object) => {
 
 const applyChange = (original: Object, changes: [Change]) => {
   return changes.reduce((acc, { path, value }) => {
-    // const lens = lensPath(path);
     return set(path, value, acc);
   }, original);
 };
